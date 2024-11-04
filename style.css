@@ -1,0 +1,490 @@
+*{
+   
+    padding: 0%;
+    margin: 0%;
+    border: 0;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+@keyframes trocar {
+    from{
+        right: 100%;
+    }
+    to{
+        right: 0%;
+    }
+}
+@keyframes img {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes aprecisao {
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0%
+    }
+}
+
+@keyframes contatos {
+    from{
+        z-index: -10;
+        opacity: 0 ;
+    }
+    to{
+        opacity: 100% ;
+        z-index: 5;
+    }
+}
+
+
+
+
+
+.testee{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+main{
+    transition: 1.5s;
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+#juntar{
+    background-image: url(f1bd065426066cdc8fc7f18cddab46b2a0713e39r1-500-355_hq.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    background-size: cover;
+}
+
+.imagem-preta{
+    filter: grayscale(100%);
+}
+nav{
+    background-attachment: fixed;   
+    transition: 1.5s;
+    left: 500px;
+    top: 0;
+    color: white;
+    display: flex;
+    justify-content: end;
+    gap: 60px;
+    padding: 15px 25px 0 0;
+}
+main::after{
+    content: '';
+    height: 2px;
+    width: 100%; 
+    top: 50px;
+    position: absolute;
+    background-color: #3434CF;
+}
+.meuNome{
+    background-attachment: fixed;
+    font-size: 25px;
+    padding: 70px 0 0 300px;
+}
+.div-IMG{
+    position: absolute;
+    z-index: 10;
+    filter: none;
+}
+.img-habilidades{
+    filter: none;
+    z-index: 10 ;
+    position: absolute;
+    left: 350px;
+    height: 300px;
+}
+.main2{
+    height: 100vh;
+    position: relative;
+    background-color: #1C1C1C;
+    color: white;
+    transition: 1.5s;
+}
+
+
+
+
+
+
+.main2 h1{
+    padding: 30px 0 0 450px ;
+    font-size: 50px;
+    
+}
+.img-trabalhos{
+    padding: 30px 0 0 50px;
+}
+.img-trabalhos img{
+    border: solid #3434CF;
+}
+.txt-trabalhos{
+    padding: 25px 0 0 50px;
+}
+.txt-trabalhos h2{
+    border: solid #3434CF;
+    width: 420px;
+    padding: 10px;
+}
+.divBnt-github{
+    position: absolute;
+    left: 600px;
+    top: 500px;
+}
+.divBnt-github button{
+    background-color: transparent;
+    border: solid #3434CF;
+    color: white;
+    padding: 7px;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+.divBnt-github button:hover{
+   opacity: 0.5;;
+    border: solid #0000ff;
+    color: black;
+}
+
+section div button{
+    animation: img ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+}
+
+section{
+
+    transition: 1.5s;
+    position: absolute ;
+    position: relative;
+
+    animation: aprecisao forwards ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 1% cover 30%;
+
+    height: 40vh;
+    width: 100%;
+    background-color: #313131;
+    display: flex;
+    gap: 50px;
+    padding-top: 100px;
+    justify-content: space-around;
+    padding-top: 150px;
+    color: white;
+}
+section div{
+    text-align: center;
+    border: solid #3434CF;
+    height: 105px;
+    padding: 6px;
+    animation: img ease-out 15s;
+    animation-timeline: view();
+    animation-range: entry 40% cover 10%;
+
+}
+section h1{
+    animation: img ease-out 3s;
+    animation-timeline: view();
+    animation-range: entry 40% cover 80%;
+    position: absolute;
+    z-index: 9;
+    top: 10px;  
+    left: 550px;
+    font-size: 50px;  
+}
+section .txt{
+    padding-top: 10px;
+}
+
+.bntfale{
+    position: absolute;
+    top: 300px;
+    border-radius: 20px;
+    height: 20px;
+    transition: 0.7s;
+}
+.bntfale button{
+    
+    background-color: transparent;
+    
+}
+.bntfale:hover{
+    opacity: 0.5;
+    border: solid #0000ff;
+    color: black;
+}
+
+
+
+footer{
+    animation: contatos 1s ease-out;
+    animation-timeline: view();
+    animation-range: entry 2% cover 50% ;
+    
+    background-color: #1C1C1C;
+    height: 20vh;
+    width: 100%;
+    position: relative ;
+    display: flex;
+    gap: 20px;
+    padding-top: 200px;
+    justify-content: space-around;
+   
+    transition: 1.5s;
+}
+footer h1{
+    font-size: 75px;
+    top: 10px;
+    left: 52    0px;
+    position: absolute;
+}
+footer h3{
+    
+    font-size: 30px;
+}
+
+.bnt-trocar{
+    position: absolute;
+}
+
+
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+nav button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+
+
+
+
+
+  @media (max-width:450px) {
+    .div-IMG{
+        position: absolute;
+     left: -350px;
+     top: 400px;
+    }
+    nav{
+        font-size: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    #nav{
+     font-size: 25px; 
+       
+    }
+        
+    
+    .bnt-trocar{
+        top: 70px;
+    }
+
+    .img-habilidades{
+        padding-left: 50px;
+        height: 150px;
+    }
+    .meuNome{
+        padding-left: 30px;
+        font-size: 22px;
+    }
+    body{
+        width: 450px;
+    }
+    .img-trabalhos{
+        padding-left: 50px;
+        width: 100px;
+    }
+    .img-trabalhos img{
+        width: 300px;
+    }
+    .txt-trabalhos{
+        font-size: 10px;
+        padding-left: 40px;
+    }
+    .txt-trabalhos h2{
+        width: 300px;
+    }
+    .divBnt-github{
+        top: 500px;
+        left: 200px;
+    }
+    section{
+        gap: 10px;
+        padding-top: 60px;
+        height: 70vh;
+        gap: 20px;
+        width: 100%;
+    }
+    section h1{
+        top: 10px;
+        left: 150px;
+        font-size: 35px;
+        width: 200px;  
+    }
+    section div{
+        font-size: 15px;
+        padding-top: 0px;
+        height: 380px;
+        width: 100px;
+        justify-content: center; 
+        align-items: center; 
+        border: none;
+        padding-top: 50px; 
+    }
+    section div h3{
+        padding-top: 10px;
+        justify-content: center; 
+        align-items: center;  
+    }
+    .bntfale {
+        top: 400px;
+        border: solid #0000ff;
+        padding: 0%;
+        
+    }
+    .testee button{
+        padding:9px;
+    }
+    .testee{
+        padding-top: 0px;
+    }
+    footer  h1{
+        left:180px;
+        font-size: 30px;
+
+        padding-left: 0px;
+    }
+
+   div .sobre {
+        font-size: 30px;
+        padding-left: 150px;
+    }
+    footer {
+        gap: 0px;
+    }
+
+  }
+
+  @media (max-width:1920px){
+    nav button{
+        font-size: 25px;
+
+    }
+    nav{
+        padding-top: 10px;
+    }
+    .meuNome{
+        font-size:50px ;
+    }
+    .img-habilidades{
+        height: 500px;
+        left: 400px;
+    }
+    .main2 h1{
+        font-size: 70px;
+        padding: 30px 0 0 650px;
+    }
+    .img-trabalhos img{
+        margin-left: 570px;
+    }
+    .txt-trabalhos h2{
+        margin-left: 600px;
+    }
+    .divBnt-github button{
+        margin-top: 300px;
+        margin-left: 250px;
+    }
+    section h1{
+        left: 790px;
+    }
+    .bntfale button{
+        left: 400px;
+    }
+    .bntfale {
+        position: absolute;
+        left: 850px;
+        top: 400px;
+    }
+    footer h1{
+        left: 770px;
+    }
+  }
